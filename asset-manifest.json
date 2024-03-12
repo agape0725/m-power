@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/m-power/static/css/main.37fff5ba.css",
+    "main.js": "/m-power/static/js/main.f9616a03.js",
+    "static/media/agency5.jpg": "/m-power/static/media/agency5.e6d2088c8ed56592e339.jpg",
+    "static/media/signup.jpg": "/m-power/static/media/signup.27f321c2dae2c8e99537.jpg",
+    "static/media/agency2.jpg": "/m-power/static/media/agency2.b5c6a0422b2d3ed085c1.jpg",
+    "static/media/liszt.png": "/m-power/static/media/liszt.7f327bc7a7c43df0d95a.png",
+    "static/media/building.jpg": "/m-power/static/media/building.af921efc49bcfbf4446a.jpg",
+    "static/media/raechelle.png": "/m-power/static/media/raechelle.5c9f337502964b1d6415.png",
+    "static/media/raileen.png": "/m-power/static/media/raileen.e9bde0eb06eaeebc0592.png",
+    "static/media/logo1.png": "/m-power/static/media/logo1.f7ae9851ea2ea6898457.png",
+    "static/media/marketing.png": "/m-power/static/media/marketing.62d0e22f42bb9197856f.png",
+    "static/media/testimonial-overlay.png": "/m-power/static/media/testimonial-overlay.c23106263fb82c4f9830.png",
+    "static/media/quotes.png": "/m-power/static/media/quotes.f63e1a2892a1e7408a3a.png",
+    "static/media/confirm.png": "/m-power/static/media/confirm.af2a744f043c0183e3bc.png",
+    "index.html": "/m-power/index.html",
+    "main.37fff5ba.css.map": "/m-power/static/css/main.37fff5ba.css.map",
+    "main.f9616a03.js.map": "/m-power/static/js/main.f9616a03.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.37fff5ba.css",
+    "static/js/main.f9616a03.js"
+  ]
+}
