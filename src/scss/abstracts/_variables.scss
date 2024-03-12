@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,200;9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Play:wght@400;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+// FONT FAMILY //
+$fn-montserrat: "Montserrat", sans-serif;
+$fn-poppins: "Poppins", sans-serif;
+$fn-quicksand: "Quicksand", sans-serif;
+$fn-play: "Play", sans-serif;
+$fn-dm-sans: "DM Sans", sans-serif;
+$fn-roboto: "Roboto", sans-serif;
+$fn-pacifico: "Pacifico", cursive;
+
+// FONT WEIGHTS //
+$font-weights: (
+  "thin": 100,
+  "extra-light": 200,
+  "light": 300,
+  "regular": 400,
+  "medium": 500,
+  "semi-bold": 600,
+  "bold": 700,
+  "extra-bold": 800,
+  "black-bold": 900,
+);
+
+// Quicksand Weight
+$quicksand-weights: (
+  weights: (
+    "light": 300,
+    "regular": 400,
+    "medium": 500,
+    "semi-bold": 600,
+    "bold": 700,
+  ),
+);
+
+$play-weights: (
+  weights: (
+    "regular": 400,
+    "bold": 700,
+  ),
+);
+
+$roboto-weights: (
+  weights: (
+    "thin": 100,
+    "light": 300,
+    "regular": 400,
+    "medium": 500,
+    "bold": 700,
+    "black-bold": 900,
+  ),
+);
+
+// FONT SIZES //
+$font-sizes: (
+  "xs": 0.85rem,
+  "s": 1rem,
+  "m": 1.2rem,
+  "l": 1.4rem,
+  "xl": 1.6rem,
+  "xxl": 1.8rem,
+);
+
+// COLORS //
+
+// Primary
+$primary-colors: (
+  "mariner": #3468c0,
+  "denim-blue": #86a7fc,
+  "warm-blue": #525ceb,
+  "venice-blue": #176b87,
+  "cobalt": #38419d,
+);
+
+// Neutral
+$neutral-colors: (
+  "porcelein": hsl(220, 16%, 95%),
+  "ghost-white": hsl(0, 0%, 98%),
+  "dutch-white": #fff6dc,
+  "bleach-white": #fff3da,
+  "baltic-sea": #25252c,
+  "granite": #838386,
+  "dessert-storm": #f8f8f8,
+  "pearl-bush": #e5e1da,
+  "silver": #c7c8cc,
+  "rodeo-dust": #cab69d,
+  "mocha": #9d7651,
+  "silver-chalice": #a9a9a9,
+  "white-lilac": #F5F7F8,
+  "white": #FFFFFF,
+);
+
+// Product Type Colors
+$default-colors: (
+  "white": #fff,
+  "black": #000,
+  "correct": #436850,
+  "incorrect": #ff8080,
+);
+
+// BOX SHADOW
+
+$shadows: (
+  "shadow-1": rgba(0, 0, 0, 0.2) 0px 2px 10px,
+  "shadow-2": rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px,
+  "shadow-3": rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px,
+);

@@ -1,0 +1,105 @@
+#welcome-container {
+  background-color: rgb(169, 169, 169, 0.8);
+  max-width: 100%;
+  margin: 2.5rem auto;
+
+  img {
+    @include scale-size(100%, 850px);
+    position: relative;
+    float: right;
+
+    @include xs {
+      width: 100%;
+      padding: 0rem;
+    }
+
+    @include breakpoint(1050px) {
+      max-width: 100%;
+      width: 660px;
+      padding: 0 0 1rem 1rem;
+    }
+
+    @include breakpoint(1315px) {
+      max-width: 100%;
+      width: 55%;
+    }
+  }
+
+  .welcome-content {
+    padding: 1.5rem;
+
+    h1 {
+      @include font-styles($fn-pacifico, xxl, $neutral-colors, baltic-sea);
+      font-weight: map-get($font-weights, regular);
+
+      @include xs {
+        font-size: 3.5rem;
+        text-align: center;
+      }
+
+      @include breakpoint(1050px) {
+        font-size: 2.4rem;
+        text-align: left;
+      }
+
+      @include breakpoint(1135px) {
+        font-size: 3rem;
+      }
+    }
+
+    h4 {
+      @include font-styles($fn-poppins, xxl, $neutral-colors, dessert-storm);
+      font-weight: map-get($font-weights, semi-bold);
+      margin: 1rem auto;
+
+      @include xs {
+        font-size: 2.1rem;
+        text-align: center;
+      }
+
+      @include breakpoint(1050px) {
+        font-size: 1.7rem;
+        text-align: left;
+      }
+
+      @include breakpoint(1135px) {
+        font-size: 2rem;
+      }
+    }
+
+    p {
+      @include font-styles($fn-poppins, m, $neutral-colors, baltic-sea);
+      font-weight: map-get($font-weights, regular);
+      line-height: 2rem;
+
+      @include xs {
+        font-size: 1.3rem;
+        text-align: justify;
+      }
+
+      @include breakpoint(1050px) {
+        font-size: 1.1rem;
+      }
+
+      @include breakpoint(1135px) {
+        font-size: 1.3rem;
+      }
+    }
+
+    span {
+      @include font-styles($fn-dm-sans, xl, $neutral-colors, baltic-sea);
+      display: flex;
+      justify-content: center;
+      font-weight: map-get($font-weights, semi-bold);
+      font-style: oblique;
+
+      @include xs {
+        font-size: 1.4rem;
+      }
+
+      @include breakpoint(1050px) {
+        font-size: 1.6rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,69 @@
+button {
+  @include xs {
+    padding: 1rem 2.7rem;
+    @include font-styles($fn-montserrat, m, $neutral-colors, porcelein);
+    font-weight: map-get($font-weights, medium);
+    background: transparent;
+    border-radius: 3px;
+    border: 1px map-get($neutral-colors, porcelein) solid;
+    position: relative;
+    width: max-content;
+    z-index: 1;
+    cursor: pointer;
+  }
+
+  @include md {
+    padding: 1.3rem 3rem;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: map-get($neutral-colors, dutch-white);
+    opacity: 0.2;
+    border-radius: 3px;
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    transition: width 200ms ease-in-out;
+  }
+
+  &:hover::before {
+    width: 100%;
+  }
+
+  &:active::before {
+    opacity: 0.5;
+  }
+}
+
+// .btn-3 {
+//   @include font-styles($fn-quicksand, "s", $neutral-colors, "dutch-white");
+//   font-weight: map-get($quicksand-weights, weights, bold);
+//   border: 2px map-get($primary-colors, dijon) solid;
+//   background-color: transparent;
+//   padding: 0.9rem 2.5rem;
+//   cursor: pointer;
+//   width: max-content;
+//   z-index: 1;
+//   position: relative;
+
+//   &::before {
+//     content: "";
+//     position: absolute;
+//     background-color: map-get($primary-colors, dijon);
+//     width: 0%;
+//     height: 100%;
+//     top: 0;
+//     left: 0;
+//     z-index: -1;
+//     transition: width 250ms ease-in-out;
+//   }
+
+//   &:hover::before {
+//     width: 100%;
+//   }
+// }

@@ -1,0 +1,56 @@
+#header-banner {
+  @include background-property(no-repeat, cover, center);
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 90vh;
+  overflow: hidden;
+  position: relative;
+  background-blend-mode: multiply;
+  transition: background-color 300ms ease;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.75);
+  }
+
+  .header-container {
+    @include flex-content(center, center, 2rem, 0);
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+
+    &-content {
+      @include flex-content(center, center, 1rem, 0);
+      flex-direction: column;
+      text-align: center;
+
+      h1 {
+        @include font-styles(
+          $fn-montserrat,
+          xxl,
+          $neutral-colors,
+          dessert-storm
+        );
+        font-weight: map-get($font-weights, bold);
+        font-size: 5rem;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 1.5px;
+      }
+
+      h3 {
+        @include font-styles($fn-montserrat, xl, $neutral-colors, dutch-white);
+        font-weight: map-get($font-weights, medium);
+      }
+
+      p {
+        @include font-styles($fn-roboto, xs, $neutral-colors, dessert-storm);
+        font-style: oblique;
+        font-size: 1.25rem !important;
+        font-weight: map-get($font-weights, light);
+        line-height: 1.5rem;
+      }
+    }
+  }
+}

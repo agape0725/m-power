@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f8f8f8;
+}
+
+// ABSTRACTS
+@import "./abstracts/variables";
+@import "./abstracts/mixins";
+@import "./abstracts/functions";
+@import "./abstracts/breakpoints";
+
+// BASE
+@import "./base/resets";
+@import "./base/typography";
+
+// COMPONENTS
+@import "./components/buttons";
+
+// COMPONENTS
+@import "./layouts/components/header";
+@import "./layouts/components/header-banner";
+@import "./layouts/components/widgets";
+@import "./layouts/components/welcome";
+@import "./layouts/components/testimonials";
+@import "./layouts/components/signup-banner";
+@import "./layouts/components/signup-form";
+@import "./layouts/components/footer";

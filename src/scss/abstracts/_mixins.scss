@@ -1,0 +1,46 @@
+@mixin flex-content($align-items, $justify-content, $row-gap, $column-gap) {
+  display: flex;
+  align-items: $align-items;
+  justify-content: $justify-content;
+  grid-row-gap: $row-gap;
+  grid-column-gap: $column-gap;
+}
+
+@mixin grid-content($size, $align-items, $justify-content) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax($size, 1fr));
+  align-items: $align-items;
+  justify-content: $justify-content;
+}
+
+@mixin row-spacing($row-gap) {
+  display: grid;
+  grid-row-gap: $row-gap;
+}
+
+@mixin column-spacing($column-gap) {
+  display: grid;
+  grid-column-gap: $column-gap;
+}
+
+@mixin scale-size($height, $width) {
+  height: $height;
+  width: $width;
+}
+
+@mixin background-property($repeat, $size, $position) {
+  background-repeat: $repeat;
+  background-size: $size;
+  background-position: $position;
+}
+
+@mixin font-styles($font-family, $font-size, $key, $value) {
+  font-family: $font-family;
+  font-size: map-get($font-sizes, $font-size);
+  color: map-get($key, $value);
+}
+
+@mixin scroller-ff($thumb, $track) {
+  scrollbar-color: map-get($primary-colors, $thumb)
+  map-get($neutral-colors, $track);
+}

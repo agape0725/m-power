@@ -1,0 +1,7 @@
+@function double($size) {
+  @return $size * 2;
+}
+
+@function divide($size) {
+  @return $size / 2;
+}

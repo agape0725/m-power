@@ -1,0 +1,91 @@
+#footer-container {
+  @include background-property(no-repeat, cover, bottom);
+  @include grid-content(400px, center, flex-start);
+  grid-gap: 4rem;
+  position: relative;
+  z-index: 1;
+  padding: 1.5rem;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(0, 0, 0, 0.8);
+    z-index: -1;
+  }
+
+  .logo-container {
+    @include flex-content(flex-start, flex-start, 1rem, 0);
+    flex-direction: column;
+
+    .logo {
+      @include scale-size(120px, 120px);
+    }
+
+    p {
+      @include font-styles($fn-quicksand, xs, $neutral-colors, dessert-storm);
+      line-height: 1.35rem;
+      text-align: justify;
+    }
+  }
+
+  .socmed-container {
+    @include flex-content(flex-start, flex-start, 0, 1rem);
+    flex-direction: row !important;
+
+    img {
+      height: 40px;
+      width: 40px;
+      padding: 0.5rem;
+      border: 1px map-get($neutral-colors, dessert-storm) solid;
+      border-radius: 100px;
+      overflow: hidden;
+      cursor: pointer;
+      transition: 150ms linear;
+
+      &:hover {
+        padding: 0;
+        border: none;
+      }
+    }
+  }
+
+  ul {
+    @include flex-content(flex-start, flex-start, 0.5rem, 0);
+    flex-direction: column !important;
+    h1 {
+      @include font-styles($fn-quicksand, m, $neutral-colors, dessert-storm);
+    }
+
+    li {
+      @include font-styles($fn-quicksand, s, $neutral-colors, silver-chalice);
+      padding: 0.3rem 0;
+    }
+
+    li[data="link"] {
+      cursor: pointer;
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        height: 1px;
+        bottom: 0;
+        left: 0;
+        background-color: map-get($neutral-colors, dessert-storm);
+        z-index: -1;
+        opacity: 0.3;
+        width: 0%;
+        transition: 200ms ease-in-out;
+      }
+
+      &:hover::before {
+        opacity: 1;
+        width: 100%;
+      }
+    }
+  }
+}

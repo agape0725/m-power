@@ -1,0 +1,31 @@
+#header-container {
+  background-color: map-get($primary-colors, venice-blue);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  padding: 0 3rem;
+
+  header {
+    @include flex-content(center, space-between, 0, 0);
+    width: 100%;
+    padding: 0.65rem 0;
+    max-width: 105rem;
+    margin: auto;
+
+    p {
+      @include font-styles($fn-montserrat, s, $neutral-colors, bleach-white);
+      font-weight: map-get($font-weights, medium);
+    }
+
+    .socmed-icons {
+      @include flex-content(center, center, 0, 2rem);
+      img {
+        @include scale-size(35px, 35px);
+        filter: invert(95%) sepia(6%) saturate(1592%) hue-rotate(314deg)
+          brightness(101%) contrast(112%);
+
+        padding: 0.5rem;
+        cursor: pointer;
+      }
+    }
+  }
+}
